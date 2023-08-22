@@ -4,12 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
+import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class BaseDriver {
     public static WebDriver driver; // SingletonDriver method
 
     static{  //bunun sarti extends olmasi ve basta yer almasi mi
+
+        Logger logger= Logger.getLogger(""); // output yapılan logları al.
+        logger.setLevel(Level.SEVERE); // sadece ERROR ları göster
+
         driver = new ChromeDriver();
         //driver.manage().window().maximize(); // Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
