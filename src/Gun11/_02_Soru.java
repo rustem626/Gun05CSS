@@ -36,7 +36,6 @@ public class _02_Soru extends BaseDriver {
         Select nesneSelect=new Select(webSelect);
         nesneSelect.selectByVisibleText("Avatar");
 
-
         BekleVeKapat();
     }
 }
