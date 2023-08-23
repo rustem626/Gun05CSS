@@ -11,6 +11,10 @@ window.scrollTo(0, 3000);     -> verilen pixele kadar sayfayı kaydırır
 window.scrollBy(0, 3000);     -> bulunduğu yerden itibaren kaydırır
 window.scrollTo(0, document.body.scrollHeight);  -> sayfanın sonuna kadar kaydırır
 ("arguments[0].scrollIntoView(true);", element)  -> elemente e kadar kaydırır.
+                              true : element sayfanın üstünde gözükene kadar,
+                              false: element sayfanın altına gözükene kadar
+                              default true;
+
 
 element.click  -> normal click
 action.click   -> action click
