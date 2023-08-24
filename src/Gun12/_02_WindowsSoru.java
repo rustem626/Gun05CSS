@@ -46,9 +46,7 @@ public class _02_WindowsSoru extends BaseDriver {
         }
 
         for (String id : windowsIdler) {
-
-            if (id.equals(anaSayfaWindowId)) continue;
-
+            if (id.equals(anaSayfaWindowId)) continue;  // ana sayfanın id si gelirse pas geç
             driver.switchTo().window(id);
             driver.close();
         }
